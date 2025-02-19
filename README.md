@@ -6,6 +6,7 @@ A compact solution for detecting and recognizing text on shipping containers whe
 
 ## Introduction
 Detecting and recognizing text on shipping containers can be challenging when the text is oriented in vertical, diagonal, or horizontal layouts, especially in “scenic” or cluttered environments. **PaddleOCR** provides powerful models and tools to handle such complexities. This repository demonstrates how to train, preprocess, and run inference with a **two-stage pipeline** for:
+![image](https://github.com/user-attachments/assets/99552e16-0505-4e89-a7a2-a7c8e66628ce)
 
 - **Text Detection** (segmentation-based)  
 - **Text Recognition** (attention-based)
@@ -52,13 +53,22 @@ In tasks where text is strictly horizontal or only slightly tilted, a typical bo
 ---
 
 ### Preprocessing
-1. **Rotation**: Cropped text images are rotated 90° counterclockwise if needed to ensure consistent orientation.  
+1. **Rotation**: Cropped text images are rotated 90° counterclockwise if needed to ensure consistent orientation.
 2. **Grayscale**: Simplifies input, focusing the model on text shapes.  
 3. **Resizing**: Standardized to width **256** × height **64** for uniform batching and model expectations.
+  ![image](https://github.com/user-attachments/assets/283d034c-0d61-41fa-b65d-242de309306c)
 
----
+--- 
 
 ### Why `rec_r50_vd_srn` Is Suitable
 1. **Handles Complex Layouts**: An attention-based sequence decoder can handle irregular text spacing and shapes better than purely convolutional methods.  
 2. **Contextual Understanding**: By leveraging the Semantic Reasoning Module, the model captures character dependencies, improving accuracy on multi-orientation or partially occluded text.  
 3. **Robust to Noise**: The ResNet50 backbone is proven robust, and the transformer encoder is adept at focusing on relevant text features, even with background clutter.
+
+### Results
+# Detection Model:
+Precision 0.97, Recall 0.98
+# Recognition Model:
+98% Accuracy 
+
+Total time for pipeline is under 200ms in C++
