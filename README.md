@@ -65,10 +65,10 @@ In tasks where text is strictly horizontal or only slightly tilted, a typical bo
 2. **Contextual Understanding**: By leveraging the Semantic Reasoning Module, the model captures character dependencies, improving accuracy on multi-orientation or partially occluded text.  
 3. **Robust to Noise**: The ResNet50 backbone is proven robust, and the transformer encoder is adept at focusing on relevant text features, even with background clutter.
 
-### Results
-# Detection Model:
+# Results
+### Detection Model:
 Precision 0.97, Recall 0.98
-# Recognition Model:
+### Recognition Model:
 98% Accuracy 
 
 Total time for pipeline is under 200ms in C++
