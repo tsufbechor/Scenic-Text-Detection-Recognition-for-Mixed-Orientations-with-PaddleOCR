@@ -14,7 +14,7 @@ Detecting and recognizing text on shipping containers can be challenging when th
 ## Detection Model
 
 **Model chosen**: `det_mv3_db`
-
+ 
 ### Key Components
 - **Feature Extraction**: [MobileNetV3](https://arxiv.org/abs/1905.02244) extracts features from the entire input image.  
 - **Text Detection**: [DB (Differentiable Binarization)](https://arxiv.org/abs/1911.08947) predicts text regions by producing a segmentation map.  
@@ -41,6 +41,7 @@ In tasks where text is strictly horizontal or only slightly tilted, a typical bo
 ## Recognition Model
 
 **Model chosen**: `rec_r50_vd_srn`
+![image](https://github.com/user-attachments/assets/941dec04-f6b4-4d2e-b541-ef223742801b)
 
 ### Key Components
 - **Backbone**: [ResNet50](https://arxiv.org/abs/1512.03385) extracts visual features from the cropped text regions.  
