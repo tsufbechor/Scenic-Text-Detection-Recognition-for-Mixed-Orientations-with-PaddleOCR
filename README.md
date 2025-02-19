@@ -20,6 +20,7 @@ Detecting and recognizing text on shipping containers can be challenging when th
 - **Text Detection**: [DB (Differentiable Binarization)](https://arxiv.org/abs/1911.08947) predicts text regions by producing a segmentation map.  
 - **Refinement**: The DB algorithm refines these regions into precise text boundaries.  
 - **Flexible Orientation Support**: This model excels at detecting text in arbitrary orientations.
+
 ![image](https://github.com/user-attachments/assets/1b09cf04-9acc-419e-bb76-5968f317d6cd)
 
 ---
