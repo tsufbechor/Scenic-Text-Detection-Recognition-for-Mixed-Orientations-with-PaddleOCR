@@ -64,6 +64,16 @@ In tasks where text is strictly horizontal or only slightly tilted, a typical bo
 2. **Contextual Understanding**: By leveraging the Semantic Reasoning Module, the model captures character dependencies, improving accuracy on multi-orientation or partially occluded text.  
 3. **Robust to Noise**: The ResNet50 backbone is proven robust, and the transformer encoder is adept at focusing on relevant text features, even with background clutter.
 
+### Annotating for this task:
+![image](https://github.com/user-attachments/assets/ba262ce6-fe5b-4dc4-a6a2-590ba4d1c805)
+
+1. **Step 1**: Manual Annotation of 300-400 photos. For text detection- bounding box annotations containing text​
+For Text Recognition- typing in to textbox text contained in photo/item of interest..  
+2. **Step 2**: Training YOLO model for text detection, TrOCR- OCR model developed by Microsoft for text recognition​ 
+3. **Step 3**: Using these models to perform inference on new photos. We can filter based on confidence of models.
+4. **Step 4**: Manually validate annotations created by models.
+Return to Step 2 with more photos, train models again. Iterative process so that models annotate more accurately.​
+
 # Results
 Both models were trained on a relatively small amount of examples(3000) but still managed impressive results
 
