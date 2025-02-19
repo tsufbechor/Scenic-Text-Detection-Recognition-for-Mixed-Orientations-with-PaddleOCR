@@ -5,12 +5,10 @@ A compact solution for detecting and recognizing text on shipping containers whe
 ---
 
 ## Introduction
-Detecting and recognizing text on shipping containers can be challenging when the text is oriented in vertical, diagonal, or horizontal layouts, especially in “scenic” or cluttered environments. **PaddleOCR** provides powerful models and tools to handle such complexities. This repository demonstrates how to train, preprocess, and run inference with a **two-stage pipeline** for:
-![image](https://github.com/user-attachments/assets/99552e16-0505-4e89-a7a2-a7c8e66628ce)
-
+Detecting and recognizing text on shipping containers can be challenging when the text is oriented in vertical, diagonal, or horizontal layouts, especially in “scenic” or cluttered environments. **PaddleOCR** provides powerful models and tools to handle such complexities. This repository demonstrates a **two-stage pipeline** for:
 - **Text Detection** (segmentation-based)  
 - **Text Recognition** (attention-based)
-
+![image](https://github.com/user-attachments/assets/99552e16-0505-4e89-a7a2-a7c8e66628ce)
 ---
 
 ## Detection Model
