@@ -66,6 +66,8 @@ In tasks where text is strictly horizontal or only slightly tilted, a typical bo
 3. **Robust to Noise**: The ResNet50 backbone is proven robust, and the transformer encoder is adept at focusing on relevant text features, even with background clutter.
 
 # Results
+Both models were trained on a relatively small amount of examples(3000) but still managed impressive results
+
 ### Detection Model:
 Precision 0.97, Recall 0.98
 ### Recognition Model:
