@@ -72,5 +72,3 @@ Precision 0.97, Recall 0.98
 98% Accuracy 
 
 Total time for pipeline is under 200ms in C++
-
-System is in production
